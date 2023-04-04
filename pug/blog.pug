@@ -1,0 +1,31 @@
+extends includes/head.pug
+block body
+
+	body
+		include includes/header.pug
+
+		main
+
+			section.blog
+				.wrapper
+					h1.wow.fadeInDown Blog
+					hr.wow.fadeInDown(data-wow-delay=".1s")
+					ul.blog__list
+						li
+							a(href="single.html").blog__item.wow.fadeInDown
+								.item__photo
+									img(src="img/blog/blog.jpeg" alt="")
+								.item__text
+									h2 Confortul termic al caminului tau: Cum sa ai facturi mai mici
+									time 27.01.2023
+						li
+							a(href="single.html").blog__item.wow.fadeInDown
+								.item__photo
+									img(src="img/blog/blog.jpeg" alt="")
+								.item__text
+									h2 Confortul termic al caminului tau: Cum sa ai facturi mai mici
+									time 27.01.2023
+
+
+		include includes/footer.pug
+		include includes/scripts.pug

@@ -1,0 +1,781 @@
+extends includes/head.pug
+block body
+
+	body
+		include includes/header.pug
+
+		main.products-page
+
+			section.banner
+				.banner__block
+					h2 EIGENTUMSWOHNUNGEN
+					p 53332 Bornheim, 
+					p Rhein-Sieg-Kreis
+				//- .banner__block
+					h2 BAUZEIT
+					p Im Verkauf
+				.wrapper
+
+					.banner__info
+						.banner__item
+							h3 Bauzeit
+							p 2023 – 2025
+						.banner__item
+							h3 Wohneinheiten
+							p 24
+						.banner__item
+							h3 Wohnfläche
+							p 2.205 m²
+						.banner__item
+							h3 Tiefgaragenstellplätze
+							p 24
+						.banner__item
+							h3 Außenstellplätze
+							p 24
+
+			section.person
+				.wrapper
+					.person__sides
+						.person__lft
+							img(src="img/sergejklatt.png.webp" alt="")
+							.lft__block
+								h3 Haben Sie Fragen? Kontaktieren Sie mich.
+								b Sergej Klatt
+								span Geschäftsführer
+								a(href="#") Schreiben Sie mir eine E-Mail
+								a(href="#") Tel.: +49 (0) 7726 938 72 - 240
+						.person__rht
+							h2 HOCHATTRAKTIVE
+							h3 Eigentumswohnungen
+							p Ein hochattraktives Wohnquartier entsteht im wunderschönen Bornheim. Für den Bau unserer Bauvorhaben verwenden wir ausschließlich hochwertige Materialien und Ausstattungselemente namhafter nationaler und internationaler Hersteller die sich hinsichtlich Komfort, Design und Langlebigkeit ausgezeichnet haben. <br><br>Mit diesem Bauvorhaben wird ein eigenes kleines Wohnquartier mit schönen Innenhöfen erstellt. Wir kümmern uns um Ihre Lebensqualität: die Luft, die Sie atmen, die Wohnung, in der Sie leben, die Dinge, die Sie jeden Tag benutzen. Also haben wir alle Zutaten für einen komfortablen Lebensstil zusammengebracht. BORNHEIM ist ein von der Natur inspiriertes urbanes Kunstwerk. Es ist Ihr völlig neues Lebensgefühl.
+
+			section.text-and-slider
+				.wrapper
+					.text-and-slider__sides
+						.text-and-slider__lft
+							h2 AUSSTATTUNGS
+							h3 Highlights
+							p Zu unseren Ausstattungsmerkmalen gehören hochwertige Fußböden, flache Duschtassen, TV-Anschlüsse in allen Wohnräumen und Fußbodenheizung. Die Räume sind durch große Fenster lichtdurchflutet. Für alle Wohneinheiten sind Kfz-Stellplätze in der Tiefgarage vorhanden. <br><br>Darüber hinaus ermöglichen Aufzüge einen barrierearmen Zugang zu allen Wohneinheiten.
+						.text-and-slider__rht
+							.text-and-slider__slider.swiper
+								.swiper-wrapper
+									.swiper-slide
+										img(src="img/photos/photo_5842611774627622985_w.jpg" alt="")
+									.swiper-slide
+										img(src="img/photos/photo_5244683671972201555_y.jpg" alt="")
+									.swiper-slide
+										img(src="img/photos/photo_5244683671972201556_y.jpg" alt="")
+									.swiper-slide
+										img(src="img/photos/photo_5244683671972201557_y.jpg" alt="")
+									.swiper-slide
+										img(src="img/photos/photo_5244683671972201558_y.jpg" alt="")
+									.swiper-slide
+										img(src="img/photos/photo_5244683671972201559_y.jpg" alt="")
+								.swiper-button-next
+								.swiper-button-prev
+							.text-and-slider__nav.swiper
+								.swiper-wrapper
+									.swiper-slide
+										img(src="img/photos/photo_5842611774627622985_w.jpg" alt="")
+									.swiper-slide
+										img(src="img/photos/photo_5244683671972201555_y.jpg" alt="")
+									.swiper-slide
+										img(src="img/photos/photo_5244683671972201556_y.jpg" alt="")
+									.swiper-slide
+										img(src="img/photos/photo_5244683671972201557_y.jpg" alt="")
+									.swiper-slide
+										img(src="img/photos/photo_5244683671972201558_y.jpg" alt="")
+									.swiper-slide
+										img(src="img/photos/photo_5244683671972201559_y.jpg" alt="")
+
+			section.projects
+				.wrapper
+					h2 WOHNUNGEN
+					h3 Grundrisse
+
+					ul.projects__tabs
+						li.li_active
+							button HAUS 1
+						li
+							button HAUS 2
+						li
+							button HAUS 3
+
+					.projects__inner
+						.projects__block.projects__block_active.projects__block_show
+							.projects__item
+								.item__photo
+									img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+								h4 2-ZIMMER (1. OG)
+								p HAUS 1 - W5 <br>69,61 M²
+								button.termin TERMIN VERINBAREN
+
+								.popup
+									.popup__bgd
+									.popup__content
+										.popup__top
+											.popup__close
+												img(src="img/close-popup.png" alt="")
+											.popup__buttons
+												a(href="#").termin TERMIN VERINBAREN
+												a(href="https://immo-pro-invest.com/wp-content/uploads/2021/05/IPI-Expose-Bitzstra%C3%9Fe.pdf" target="_blank") EXPOSE DOWNLOAD
+										.popup__inner
+											.popup__sides
+												.popup__lft
+													h4 4-ZIMMER WOHNUNG (EG)
+													img(src="img/Bitz-H1-W1-4Z-t.jpg.webp" alt="")
+												.popup__rht
+													img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+							.projects__item
+								.item__photo
+									img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+								h4 2-ZIMMER (1. OG)
+								p HAUS 1 - W5 <br>69,61 M²
+
+								.popup
+									.popup__bgd
+									.popup__content
+										.popup__top
+											.popup__close
+												img(src="img/close-popup.png" alt="")
+											.popup__buttons
+												a(href="https://immo-pro-invest.com/wp-content/uploads/2021/05/IPI-Expose-Bitzstra%C3%9Fe.pdf" target="_blank") EXPOSE DOWNLOAD
+										.popup__inner
+											.popup__sides
+												.popup__lft
+													h4 4-ZIMMER WOHNUNG (EG)
+													img(src="img/Bitz-H1-W1-4Z-t.jpg.webp" alt="")
+												.popup__rht
+													img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+							.projects__item
+								.item__photo
+									img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+								h4 2-ZIMMER (1. OG)
+								p HAUS 1 - W5 <br>69,61 M²
+
+								.popup
+									.popup__bgd
+									.popup__content
+										.popup__top
+											.popup__close
+												img(src="img/close-popup.png" alt="")
+											.popup__buttons
+												a(href="https://immo-pro-invest.com/wp-content/uploads/2021/05/IPI-Expose-Bitzstra%C3%9Fe.pdf" target="_blank") EXPOSE DOWNLOAD
+										.popup__inner
+											.popup__sides
+												.popup__lft
+													h4 4-ZIMMER WOHNUNG (EG)
+													img(src="img/Bitz-H1-W1-4Z-t.jpg.webp" alt="")
+												.popup__rht
+													img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+							.projects__item
+								.item__photo
+									img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+								h4 2-ZIMMER (1. OG)
+								p HAUS 1 - W5 <br>69,61 M²
+
+								.popup
+									.popup__bgd
+									.popup__content
+										.popup__top
+											.popup__close
+												img(src="img/close-popup.png" alt="")
+											.popup__buttons
+												a(href="https://immo-pro-invest.com/wp-content/uploads/2021/05/IPI-Expose-Bitzstra%C3%9Fe.pdf" target="_blank") EXPOSE DOWNLOAD
+										.popup__inner
+											.popup__sides
+												.popup__lft
+													h4 4-ZIMMER WOHNUNG (EG)
+													img(src="img/Bitz-H1-W1-4Z-t.jpg.webp" alt="")
+												.popup__rht
+													img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+							.projects__item
+								.item__photo
+									img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+								h4 2-ZIMMER (1. OG)
+								p HAUS 1 - W5 <br>69,61 M²
+
+								.popup
+									.popup__bgd
+									.popup__content
+										.popup__top
+											.popup__close
+												img(src="img/close-popup.png" alt="")
+											.popup__buttons
+												a(href="https://immo-pro-invest.com/wp-content/uploads/2021/05/IPI-Expose-Bitzstra%C3%9Fe.pdf" target="_blank") EXPOSE DOWNLOAD
+										.popup__inner
+											.popup__sides
+												.popup__lft
+													h4 4-ZIMMER WOHNUNG (EG)
+													img(src="img/Bitz-H1-W1-4Z-t.jpg.webp" alt="")
+												.popup__rht
+													img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+							.projects__item
+								.item__photo
+									img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+								h4 2-ZIMMER (1. OG)
+								p HAUS 1 - W5 <br>69,61 M²
+
+								.popup
+									.popup__bgd
+									.popup__content
+										.popup__top
+											.popup__close
+												img(src="img/close-popup.png" alt="")
+											.popup__buttons
+												a(href="https://immo-pro-invest.com/wp-content/uploads/2021/05/IPI-Expose-Bitzstra%C3%9Fe.pdf" target="_blank") EXPOSE DOWNLOAD
+										.popup__inner
+											.popup__sides
+												.popup__lft
+													h4 4-ZIMMER WOHNUNG (EG)
+													img(src="img/Bitz-H1-W1-4Z-t.jpg.webp" alt="")
+												.popup__rht
+													img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+							.projects__item
+								.item__photo
+									img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+								h4 2-ZIMMER (1. OG)
+								p HAUS 1 - W5 <br>69,61 M²
+
+								.popup
+									.popup__bgd
+									.popup__content
+										.popup__top
+											.popup__close
+												img(src="img/close-popup.png" alt="")
+											.popup__buttons
+												a(href="https://immo-pro-invest.com/wp-content/uploads/2021/05/IPI-Expose-Bitzstra%C3%9Fe.pdf" target="_blank") EXPOSE DOWNLOAD
+										.popup__inner
+											.popup__sides
+												.popup__lft
+													h4 4-ZIMMER WOHNUNG (EG)
+													img(src="img/Bitz-H1-W1-4Z-t.jpg.webp" alt="")
+												.popup__rht
+													img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+							.projects__item
+								.item__photo
+									img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+								h4 2-ZIMMER (1. OG)
+								p HAUS 1 - W5 <br>69,61 M²
+
+								.popup
+									.popup__bgd
+									.popup__content
+										.popup__top
+											.popup__close
+												img(src="img/close-popup.png" alt="")
+											.popup__buttons
+												a(href="https://immo-pro-invest.com/wp-content/uploads/2021/05/IPI-Expose-Bitzstra%C3%9Fe.pdf" target="_blank") EXPOSE DOWNLOAD
+										.popup__inner
+											.popup__sides
+												.popup__lft
+													h4 4-ZIMMER WOHNUNG (EG)
+													img(src="img/Bitz-H1-W1-4Z-t.jpg.webp" alt="")
+												.popup__rht
+													img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+						.projects__block
+							.projects__item
+								.item__photo
+									img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+								h4 2-ZIMMER (1. OG)
+								p HAUS 1 - W5 <br>69,61 M²
+
+								.popup
+									.popup__bgd
+									.popup__content
+										.popup__top
+											.popup__close
+												img(src="img/close-popup.png" alt="")
+											.popup__buttons
+												a(href="https://immo-pro-invest.com/wp-content/uploads/2021/05/IPI-Expose-Bitzstra%C3%9Fe.pdf" target="_blank") EXPOSE DOWNLOAD
+										.popup__inner
+											.popup__sides
+												.popup__lft
+													h4 4-ZIMMER WOHNUNG (EG)
+													img(src="img/Bitz-H1-W1-4Z-t.jpg.webp" alt="")
+												.popup__rht
+													img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+							.projects__item
+								.item__photo
+									img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+								h4 2-ZIMMER (1. OG)
+								p HAUS 1 - W5 <br>69,61 M²
+								button.termin TERMIN VERINBAREN
+
+								.popup
+									.popup__bgd
+									.popup__content
+										.popup__top
+											.popup__close
+												img(src="img/close-popup.png" alt="")
+											.popup__buttons
+												a(href="#").termin TERMIN VERINBAREN
+												a(href="https://immo-pro-invest.com/wp-content/uploads/2021/05/IPI-Expose-Bitzstra%C3%9Fe.pdf" target="_blank") EXPOSE DOWNLOAD
+										.popup__inner
+											.popup__sides
+												.popup__lft
+													h4 4-ZIMMER WOHNUNG (EG)
+													img(src="img/Bitz-H1-W1-4Z-t.jpg.webp" alt="")
+												.popup__rht
+													img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+							.projects__item
+								.item__photo
+									img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+								h4 2-ZIMMER (1. OG)
+								p HAUS 1 - W5 <br>69,61 M²
+
+								.popup
+									.popup__bgd
+									.popup__content
+										.popup__top
+											.popup__close
+												img(src="img/close-popup.png" alt="")
+											.popup__buttons
+												a(href="https://immo-pro-invest.com/wp-content/uploads/2021/05/IPI-Expose-Bitzstra%C3%9Fe.pdf" target="_blank") EXPOSE DOWNLOAD
+										.popup__inner
+											.popup__sides
+												.popup__lft
+													h4 4-ZIMMER WOHNUNG (EG)
+													img(src="img/Bitz-H1-W1-4Z-t.jpg.webp" alt="")
+												.popup__rht
+													img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+							.projects__item
+								.item__photo
+									img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+								h4 2-ZIMMER (1. OG)
+								p HAUS 1 - W5 <br>69,61 M²
+
+								.popup
+									.popup__bgd
+									.popup__content
+										.popup__top
+											.popup__close
+												img(src="img/close-popup.png" alt="")
+											.popup__buttons
+												a(href="https://immo-pro-invest.com/wp-content/uploads/2021/05/IPI-Expose-Bitzstra%C3%9Fe.pdf" target="_blank") EXPOSE DOWNLOAD
+										.popup__inner
+											.popup__sides
+												.popup__lft
+													h4 4-ZIMMER WOHNUNG (EG)
+													img(src="img/Bitz-H1-W1-4Z-t.jpg.webp" alt="")
+												.popup__rht
+													img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+							.projects__item
+								.item__photo
+									img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+								h4 2-ZIMMER (1. OG)
+								p HAUS 1 - W5 <br>69,61 M²
+
+								.popup
+									.popup__bgd
+									.popup__content
+										.popup__top
+											.popup__close
+												img(src="img/close-popup.png" alt="")
+											.popup__buttons
+												a(href="https://immo-pro-invest.com/wp-content/uploads/2021/05/IPI-Expose-Bitzstra%C3%9Fe.pdf" target="_blank") EXPOSE DOWNLOAD
+										.popup__inner
+											.popup__sides
+												.popup__lft
+													h4 4-ZIMMER WOHNUNG (EG)
+													img(src="img/Bitz-H1-W1-4Z-t.jpg.webp" alt="")
+												.popup__rht
+													img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+							.projects__item
+								.item__photo
+									img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+								h4 2-ZIMMER (1. OG)
+								p HAUS 1 - W5 <br>69,61 M²
+
+								.popup
+									.popup__bgd
+									.popup__content
+										.popup__top
+											.popup__close
+												img(src="img/close-popup.png" alt="")
+											.popup__buttons
+												a(href="https://immo-pro-invest.com/wp-content/uploads/2021/05/IPI-Expose-Bitzstra%C3%9Fe.pdf" target="_blank") EXPOSE DOWNLOAD
+										.popup__inner
+											.popup__sides
+												.popup__lft
+													h4 4-ZIMMER WOHNUNG (EG)
+													img(src="img/Bitz-H1-W1-4Z-t.jpg.webp" alt="")
+												.popup__rht
+													img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+							.projects__item
+								.item__photo
+									img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+								h4 2-ZIMMER (1. OG)
+								p HAUS 1 - W5 <br>69,61 M²
+
+								.popup
+									.popup__bgd
+									.popup__content
+										.popup__top
+											.popup__close
+												img(src="img/close-popup.png" alt="")
+											.popup__buttons
+												a(href="https://immo-pro-invest.com/wp-content/uploads/2021/05/IPI-Expose-Bitzstra%C3%9Fe.pdf" target="_blank") EXPOSE DOWNLOAD
+										.popup__inner
+											.popup__sides
+												.popup__lft
+													h4 4-ZIMMER WOHNUNG (EG)
+													img(src="img/Bitz-H1-W1-4Z-t.jpg.webp" alt="")
+												.popup__rht
+													img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+							.projects__item
+								.item__photo
+									img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+								h4 2-ZIMMER (1. OG)
+								p HAUS 1 - W5 <br>69,61 M²
+
+								.popup
+									.popup__bgd
+									.popup__content
+										.popup__top
+											.popup__close
+												img(src="img/close-popup.png" alt="")
+											.popup__buttons
+												a(href="https://immo-pro-invest.com/wp-content/uploads/2021/05/IPI-Expose-Bitzstra%C3%9Fe.pdf" target="_blank") EXPOSE DOWNLOAD
+										.popup__inner
+											.popup__sides
+												.popup__lft
+													h4 4-ZIMMER WOHNUNG (EG)
+													img(src="img/Bitz-H1-W1-4Z-t.jpg.webp" alt="")
+												.popup__rht
+													img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+						.projects__block
+							.projects__item
+								.item__photo
+									img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+								h4 2-ZIMMER (1. OG)
+								p HAUS 1 - W5 <br>69,61 M²
+
+								.popup
+									.popup__bgd
+									.popup__content
+										.popup__top
+											.popup__close
+												img(src="img/close-popup.png" alt="")
+											.popup__buttons
+												a(href="https://immo-pro-invest.com/wp-content/uploads/2021/05/IPI-Expose-Bitzstra%C3%9Fe.pdf" target="_blank") EXPOSE DOWNLOAD
+										.popup__inner
+											.popup__sides
+												.popup__lft
+													h4 4-ZIMMER WOHNUNG (EG)
+													img(src="img/Bitz-H1-W1-4Z-t.jpg.webp" alt="")
+												.popup__rht
+													img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+							.projects__item
+								.item__photo
+									img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+								h4 2-ZIMMER (1. OG)
+								p HAUS 1 - W5 <br>69,61 M²
+
+								.popup
+									.popup__bgd
+									.popup__content
+										.popup__top
+											.popup__close
+												img(src="img/close-popup.png" alt="")
+											.popup__buttons
+												a(href="https://immo-pro-invest.com/wp-content/uploads/2021/05/IPI-Expose-Bitzstra%C3%9Fe.pdf" target="_blank") EXPOSE DOWNLOAD
+										.popup__inner
+											.popup__sides
+												.popup__lft
+													h4 4-ZIMMER WOHNUNG (EG)
+													img(src="img/Bitz-H1-W1-4Z-t.jpg.webp" alt="")
+												.popup__rht
+													img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+							.projects__item
+								.item__photo
+									img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+								h4 2-ZIMMER (1. OG)
+								p HAUS 1 - W5 <br>69,61 M²
+
+								.popup
+									.popup__bgd
+									.popup__content
+										.popup__top
+											.popup__close
+												img(src="img/close-popup.png" alt="")
+											.popup__buttons
+												a(href="https://immo-pro-invest.com/wp-content/uploads/2021/05/IPI-Expose-Bitzstra%C3%9Fe.pdf" target="_blank") EXPOSE DOWNLOAD
+										.popup__inner
+											.popup__sides
+												.popup__lft
+													h4 4-ZIMMER WOHNUNG (EG)
+													img(src="img/Bitz-H1-W1-4Z-t.jpg.webp" alt="")
+												.popup__rht
+													img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+							.projects__item
+								.item__photo
+									img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+								h4 2-ZIMMER (1. OG)
+								p HAUS 1 - W5 <br>69,61 M²
+
+								.popup
+									.popup__bgd
+									.popup__content
+										.popup__top
+											.popup__close
+												img(src="img/close-popup.png" alt="")
+											.popup__buttons
+												a(href="https://immo-pro-invest.com/wp-content/uploads/2021/05/IPI-Expose-Bitzstra%C3%9Fe.pdf" target="_blank") EXPOSE DOWNLOAD
+										.popup__inner
+											.popup__sides
+												.popup__lft
+													h4 4-ZIMMER WOHNUNG (EG)
+													img(src="img/Bitz-H1-W1-4Z-t.jpg.webp" alt="")
+												.popup__rht
+													img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+							.projects__item
+								.item__photo
+									img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+								h4 2-ZIMMER (1. OG)
+								p HAUS 1 - W5 <br>69,61 M²
+
+								.popup
+									.popup__bgd
+									.popup__content
+										.popup__top
+											.popup__close
+												img(src="img/close-popup.png" alt="")
+											.popup__buttons
+												a(href="https://immo-pro-invest.com/wp-content/uploads/2021/05/IPI-Expose-Bitzstra%C3%9Fe.pdf" target="_blank") EXPOSE DOWNLOAD
+										.popup__inner
+											.popup__sides
+												.popup__lft
+													h4 4-ZIMMER WOHNUNG (EG)
+													img(src="img/Bitz-H1-W1-4Z-t.jpg.webp" alt="")
+												.popup__rht
+													img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+							.projects__item
+								.item__photo
+									img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+								h4 2-ZIMMER (1. OG)
+								p HAUS 1 - W5 <br>69,61 M²
+
+								.popup
+									.popup__bgd
+									.popup__content
+										.popup__top
+											.popup__close
+												img(src="img/close-popup.png" alt="")
+											.popup__buttons
+												a(href="https://immo-pro-invest.com/wp-content/uploads/2021/05/IPI-Expose-Bitzstra%C3%9Fe.pdf" target="_blank") EXPOSE DOWNLOAD
+										.popup__inner
+											.popup__sides
+												.popup__lft
+													h4 4-ZIMMER WOHNUNG (EG)
+													img(src="img/Bitz-H1-W1-4Z-t.jpg.webp" alt="")
+												.popup__rht
+													img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+							.projects__item
+								.item__photo
+									img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+								h4 2-ZIMMER (1. OG)
+								p HAUS 1 - W5 <br>69,61 M²
+
+								.popup
+									.popup__bgd
+									.popup__content
+										.popup__top
+											.popup__close
+												img(src="img/close-popup.png" alt="")
+											.popup__buttons
+												a(href="https://immo-pro-invest.com/wp-content/uploads/2021/05/IPI-Expose-Bitzstra%C3%9Fe.pdf" target="_blank") EXPOSE DOWNLOAD
+										.popup__inner
+											.popup__sides
+												.popup__lft
+													h4 4-ZIMMER WOHNUNG (EG)
+													img(src="img/Bitz-H1-W1-4Z-t.jpg.webp" alt="")
+												.popup__rht
+													img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+							.projects__item
+								.item__photo
+									img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+								h4 2-ZIMMER (1. OG)
+								p HAUS 1 - W5 <br>69,61 M²
+
+								.popup
+									.popup__bgd
+									.popup__content
+										.popup__top
+											.popup__close
+												img(src="img/close-popup.png" alt="")
+											.popup__buttons
+												a(href="https://immo-pro-invest.com/wp-content/uploads/2021/05/IPI-Expose-Bitzstra%C3%9Fe.pdf" target="_blank") EXPOSE DOWNLOAD
+										.popup__inner
+											.popup__sides
+												.popup__lft
+													h4 4-ZIMMER WOHNUNG (EG)
+													img(src="img/Bitz-H1-W1-4Z-t.jpg.webp" alt="")
+												.popup__rht
+													img(src="img/Bitz-H1-W5-2Z-v.jpg.webp" alt="")
+
+			section.big-slider
+				.slider-main.swiper
+					.swiper-wrapper
+						.swiper-slide
+							img(src="img/photos/photo_5842611774627622985_w.jpg" alt="")
+						.swiper-slide
+							img(src="img/photos/photo_5244683671972201555_y.jpg" alt="")
+						.swiper-slide
+							img(src="img/photos/photo_5244683671972201556_y.jpg" alt="")
+						.swiper-slide
+							img(src="img/photos/photo_5244683671972201557_y.jpg" alt="")
+					.swiper-button-next
+					.swiper-button-prev
+				.slider-nav.swiper
+					.swiper-wrapper
+						.swiper-slide
+							img(src="img/photos/photo_5842611774627622985_w.jpg" alt="")
+						.swiper-slide
+							img(src="img/photos/photo_5244683671972201555_y.jpg" alt="")
+						.swiper-slide
+							img(src="img/photos/photo_5244683671972201556_y.jpg" alt="")
+						.swiper-slide
+							img(src="img/photos/photo_5244683671972201557_y.jpg" alt="")
+
+			section.progress
+				.wrapper
+					h2 AKTUELLER STATUS
+					hr
+					img(src="img/planung-1.png" alt="")
+
+			section.video
+				<iframe class="elementor-background-video-embed" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="Bitzstraße Imagefilm" width="640" height="360" src="https://www.youtube.com/embed/hdc0QSWTqik?autoplay=1&mute=1&loop=1&rel=0&showinfo=0&color=white&iv_load_policy=3&playlist=hdc0QSWTqik" id="widget2" style="width: 100%; height: 1012.5px;"></iframe>
+
+			section.map
+				.wrapper
+					h2 LAGEPLAN
+					.iframe
+						img(src="img/map.png" alt="" width="100%" height="430px")
+
+			section.info-and-video
+				.wrapper
+					.info-and-video__top
+						.info-and-video__title
+							h2 LAGE <br>UMGEBUNG
+							h3 Bad Dürrheim
+						.info-and-video__image
+							img(src="img/banner-photo-3.jpeg" alt="")
+
+					hr
+
+					h4 WOHNEN WO ANDERE URLAUB MACHEN! <br>BAD DÜRRHEIM, BITZSTRASSE
+
+					.info-and-video__texts
+						b Makrolage 
+						p Die im Schwarzwald-Baar-Kreis gelegene traditionsreiche Kurstadt ist mit ihrem Heilklima, die beste Adresse für Gesundheit, Fitness, Wohlbefinden und Entspannung. Bad Dürrheim ist das einzige Sole-Heilbad des Schwarzwaldes. Der Kurpark und der Salinensee sind nur ein Bruchteil der Entspannungsmöglichkeiten dieser Stadt. Bad Dürrheim wird geprägt durch beste Verkehrsanbindungen, gute Infrastruktur, vielfältige Kultur- und Freizeitangebote. Das nahe Autobahndreieck, mit einer direkten Anbindung an die A81, bietet die Möglichkeit innerhalb einer Stunde den Bodensee, Stuttgart oder Zürich zu erreichen. Villingen-Schwenningen liegt direkt neben Bad Dürrheim.
+						b Umgebung
+						p Die Umgebung der Stadt und ihre Nähe zum Schwarzwald bieten zahlreiche Möglichkeiten einer aktiven Freizeitgestaltung. Vielfältige Wander- und Radwege bieten eine ideale Möglichkeit einen sonnigen Tag zu gestalten. Mikrolage
+						b Mikrolage
+						p Das Wohnobjekt befindet sich in unmittelbarer Nähe des Kurgartens in Bad Dürrheim. In der direkten Umgebung kann einer Vielzahl an Freizeitaktivitäten nachgegangen werden. Auch Schulen, Restaurants/Cafes sowie das Klinikum befinden sich in unmittelbarer Nähe.
+
+					.info-and-video__video
+						<iframe class="elementor-background-video-embed" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="Bitzstraße Imagefilm" width="640" height="360" src="https://www.youtube.com/embed/CsbXC89GC-c?autoplay=1&mute=1&loop=1&rel=0&showinfo=0&color=white&iv_load_policy=3&playlist=CsbXC89GC-c" id="widget2" style="width: 100%; height: 1012.5px;"></iframe>
+
+			section.form
+				.wrapper
+					h2 Ich habe Interesse!
+
+					form(action="#")
+
+						.w-50
+							select
+								option(value="Herr") Herr
+								option(value="Frau") Frau
+						.w-50
+
+						input(type="text" placeholder="Vorname *" required).w-50
+						input(type="text" placeholder="Nachname *" required).w-50
+						input(type="email" placeholder="E-Mail-Adresse *" required).w-50
+						input(type="tel" placeholder="Telefonnummer").w-50
+						input(type="text" placeholder="Straße, Hausnummer").w-50
+						input(type="text" placeholder="PLZ").w-50
+						input(type="text" placeholder="Ort").w-50
+						input(type="text" placeholder="Ihre Nachricht *").w-100
+
+						input(type="checkbox")#check
+						label(for="check")
+							span Ich stimme der Speicherung der Daten zur Verarbeitung nach DSGVO zu. * 
+
+						.bottom
+							p * Pflichtfeld
+							button(type="submit") Absenden
+
+			section.instagram
+				.wrapper
+					.instagram__title
+						.ico
+							img(src="img/inst-icon.png" alt="")
+						h2 FOLGEN SIE UNS AUF <b>INSTAGRAM</b>
+					.instagram__sides
+						.instagram__lft
+							img(src="img/hand-insta.png.webp" alt="")
+						.instagram__rht
+							p Bleiben Sie auf dem neuesten Stand und verpassen Sie keine Neuigkeiten über aktuell laufende Projekte.
+							p Erfahren Sie mehr von uns auf Instagram.
+							a(href="#") INSTAGRAM
+
+			.popup.global-popup
+				.popup__bgd
+				.popup__content
+					.popup__close
+						img(src="img/close-popup.png" alt="")
+					.popup__sides
+						.popup__title
+							h3 Jetzt Anfragen
+							h2 Wunschtermin
+							p Senden Sie uns eine Nachricht mit Ihrem Wunschtermin. Ein Mitarbeiter unseres Team meldet sich umgehende .
+						form.popup__form(action="#")
+							label.w-50
+								span Vor- und Nachname *
+								input(type="text")
+							label.w-50
+								span E-Mail-Adresse *
+								input(type="email")
+							label.w-50
+								span Wohnobjekt *
+								select
+									option(value="Bad Dürrheim - Bitzstraße") Bad Dürrheim - Bitzstraße
+									option(value="Bad Dürrheim - Waldstraße") Bad Dürrheim - Waldstraße
+									option(value="Donaueschingen") Donaueschingen
+									option(value="Offenburg") Offenburg
+									option(value="VS-Villingen - Am Bickeberg 3") VS-Villingen - Am Bickeberg 3
+							label.w-50
+								span Anzahl der Zimme
+								select
+									option(value="2-Zimmer") 2-Zimmer
+									option(value="3-Zimmer") 3-Zimmer
+									option(value="4-Zimmer") 4-Zimmer
+							label.w-50
+								span Datum
+								input(type="date")
+							label.w-50
+								span Uhrzeit
+								input(type="time")
+							label.w-100
+								span Nachricht
+								textarea
+
+							label.w-100.checkbox
+								input(type="checkbox")
+								span  Hiermit bestätige ich die Datenschutzerklärung gelesen zu haben und stimme dieser zu. *
+
+							p.w-50 *Pflichtfeld
+							.w-50
+
+							button
+								span SENDEN
+								.ico ->
+
+
+
+
+		
+
+		include includes/footer.pug
+		include includes/scripts.pug

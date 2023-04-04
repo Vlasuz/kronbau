@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Adobe Gurmukhi';
+    src: url('AdobeGurmukhi-Regular.woff2') format('woff2'),
+        url('AdobeGurmukhi-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
