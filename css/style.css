@@ -683,8 +683,8 @@ header {
   -o-object-fit: cover;
   object-fit: cover;
   display: block;
-  -webkit-filter: brightness(.3);
-  filter: brightness(.3);
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease
@@ -720,7 +720,7 @@ header {
   color: #000
 }
 .things__button {
-  background: #38b000;
+  background: #1086d4;
   border-radius: 0.4375rem;
   font-weight: 600;
   font-size: 1rem;
@@ -891,9 +891,11 @@ header {
   justify-content: flex-end;
   position: relative
 }
-.contacts iframe {
+.contacts .map {
   width: 100%;
-  height: 46.875rem
+  height: 46.875rem;
+  -o-object-fit: cover;
+  object-fit: cover
 }
 .contacts__form {
   position: absolute;
@@ -1159,7 +1161,7 @@ footer {
   font-size: 0.75rem;
   line-height: 120%;
   letter-spacing: .035em;
-  color: #2b700a;
+  color: #595b5f;
   padding: 0.4375rem 0;
   display: block;
   width: 100%
@@ -1456,6 +1458,46 @@ footer {
     margin-top: 0
   }
 }
+.info-page {
+  margin: 6.25rem 0
+}
+.info-page .wrapper {
+  max-width: 70rem
+}
+.info-page h1 {
+  font-family: "Josefin Sans",Sans-serif;
+  font-size: 2.625rem;
+  font-weight: 600;
+  color: #003577;
+  margin-bottom: 3.75rem
+}
+.info-page h2 {
+  color: #003577;
+  font-family: "Josefin Sans";
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem
+}
+.info-page__sides {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2,1fr)
+}
+.info-page li {
+  margin-bottom: 1.875rem
+}
+.info-page li p {
+  color: #54595f;
+  font-size: 1.25rem;
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  line-height: 1.875rem
+}
+@media screen and (max-width:36em){
+  .info-page__sides {
+    display: block
+  }
+}
 .products-page .progress {
   margin: 6.25rem 0
 }
@@ -1466,13 +1508,13 @@ footer {
   display: block
 }
 .products-page .progress hr {
-  background: #38b000;
+  background: #1086d4;
   border: none;
   height: 0.125rem;
   margin: 1.875rem 0 3.75rem
 }
 .products-page .progress h2 {
-  color: #38b000;
+  color: #1086d4;
   font-family: "Josefin Sans",Sans-serif;
   font-size: 2rem;
   font-weight: 700;
@@ -1513,7 +1555,8 @@ footer {
   padding: 1.875rem;
   background: #fff;
   min-width: 15.3125rem;
-  height: 7.3125rem
+  height: 7.3125rem;
+  border-radius: 0.9375rem
 }
 .products-page .banner__item h3 {
   font-family: "Josefin Sans",Sans-serif;
@@ -1537,19 +1580,19 @@ footer {
   font-family: "Josefin Sans",Sans-serif;
   font-size: 1.75rem;
   font-weight: 600;
-  margin-bottom: 1.25rem
+  margin-bottom: 0.625rem
 }
 .products-page .banner__block p {
   font-size: 1.25rem;
   color: #fff;
   font-weight: 200;
   font-family: "Josefin Sans",Sans-serif;
-  line-height: 2.5rem
+  line-height: 1.875rem
 }
 .products-page .banner__block:first-child {
   background: #38b000;
   margin-top: auto;
-  min-width: 37.5rem
+  border-radius: 0 1.25rem 1.25rem 0
 }
 .products-page .banner__block:nth-child(2) {
   background: #fff;
@@ -1584,7 +1627,7 @@ footer {
   margin-left: 1.25rem
 }
 .products-page .person__rht h2 {
-  color: #38b000;
+  color: #1086d4;
   font-family: "Josefin Sans",Sans-serif;
   font-size: 2rem;
   font-weight: 700;
@@ -1592,18 +1635,17 @@ footer {
   margin-bottom: 0.625rem
 }
 .products-page .person__rht h3 {
-  color: #977c5a;
-  font-family: Cardo,Sans-serif;
+  color: #000;
+  font-family: "Adobe Gurmukhi",Sans-serif;
   font-size: 3.625rem;
   font-weight: 200;
   font-style: italic;
   margin-bottom: 1.25rem
 }
 .products-page .person__rht p {
-  color: #7a7a7a;
-  font-family: "Josefin Sans",Sans-serif;
+  color: #000;
   font-size: 1.125rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.75rem
 }
 .products-page .person__lft {
@@ -1611,8 +1653,9 @@ footer {
   width: 100%
 }
 .products-page .person__lft .lft__block {
-  background: #38b000;
-  padding: 1.875rem
+  background: #1086d4;
+  padding: 0.9375rem;
+  border-radius: 1.25rem
 }
 .products-page .person__lft h3 {
   color: #fff;
@@ -1621,7 +1664,7 @@ footer {
   font-weight: 600;
   line-height: 1.5em;
   text-align: center;
-  margin-bottom: 1.25rem
+  margin-bottom: 0.625rem
 }
 .products-page .person__lft b,
 .products-page .person__lft span {
@@ -1642,7 +1685,7 @@ footer {
   font-weight: 500;
   display: block;
   text-decoration: underline;
-  margin-top: 1.25rem
+  margin-top: 0.625rem
 }
 .products-page .person__lft img {
   width: 100%;
@@ -1697,13 +1740,32 @@ footer {
   width: 100%;
   margin-right: 2.5rem
 }
+.products-page .text-and-slider .swiper-button-next,
+.products-page .text-and-slider .swiper-button-prev {
+  width: 2.5rem;
+  height: 2.5rem
+}
 .products-page .text-and-slider .swiper-button-next:after,
 .products-page .text-and-slider .swiper-button-prev:after {
-  color: #fff;
-  font-size: 1.25rem
+  color: #38b000;
+  font-size: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: #fff;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
 }
 .products-page .text-and-slider h2 {
-  color: #38b000;
+  color: #1086d4;
   font-family: "Josefin Sans",Sans-serif;
   font-size: 2rem;
   font-weight: 700;
@@ -1711,25 +1773,63 @@ footer {
   margin-bottom: 0.625rem
 }
 .products-page .text-and-slider h3 {
-  color: #977c5a;
-  font-family: Cardo,Sans-serif;
+  color: #000;
+  font-family: "Adobe Gurmukhi",Sans-serif;
   font-size: 3.625rem;
   font-weight: 200;
   font-style: italic;
   margin-bottom: 1.25rem
 }
 .products-page .text-and-slider p {
-  color: #7a7a7a;
-  font-family: "Josefin Sans",Sans-serif;
+  color: #000;
   font-size: 1.125rem;
   line-height: 2rem;
-  font-weight: 300
+  font-weight: 400
+}
+.products-page .projects .swiper-button-next.swiper-button-disabled,
+.products-page .projects .swiper-button-prev.swiper-button-disabled {
+  pointer-events: auto
+}
+.products-page .projects .swiper-button-next,
+.products-page .projects .swiper-button-prev {
+  width: 1.875rem;
+  height: 1.875rem
+}
+.products-page .projects .swiper-pagination-bullet-active {
+  background: #38b000
+}
+.products-page .projects .swiper-slide img {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover
+}
+.products-page .projects .swiper-slide {
+  height: auto
+}
+.products-page .projects .swiper-button-next:after,
+.products-page .projects .swiper-button-prev:after {
+  color: #38b000;
+  font-size: 0.9375rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+  background: #fff;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
 }
 .products-page .projects .wrapper {
   max-width: 71.875rem
 }
 .products-page .projects h2 {
-  color: #38b000;
+  color: #1086d4;
   font-family: "Josefin Sans",Sans-serif;
   font-size: 2rem;
   font-weight: 700;
@@ -1737,8 +1837,8 @@ footer {
   margin-bottom: 0.625rem
 }
 .products-page .projects h3 {
-  color: #977c5a;
-  font-family: Cardo,Sans-serif;
+  color: #000;
+  font-family: "Adobe Gurmukhi",Sans-serif;
   font-size: 3.625rem;
   font-weight: 200;
   font-style: italic;
@@ -1809,11 +1909,12 @@ footer {
   transition: all .9s ease
 }
 .products-page .projects__block_active {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-  grid-template-columns: repeat(4,1fr);
-  grid-gap: 1.25rem
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -10px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap
 }
 .products-page .projects__block_show {
   opacity: 1
@@ -1823,6 +1924,9 @@ footer {
   box-shadow: 0 0 0.9375rem 0 rgba(0,0,0,.2);
   padding: 1.25rem;
   background: #fff;
+  width: calc(25% - 1.25rem);
+  margin: 0 0.625rem;
+  margin-bottom: 0.625rem;
   cursor: pointer
 }
 .products-page .projects__item h4 {
@@ -2139,7 +2243,9 @@ footer {
   height: 100%
 }
 .products-page .form {
-  margin: 5rem 0
+  padding: 5rem 0;
+  background: #f0f0f0;
+  margin-top: 3.125rem
 }
 .products-page .form h2 {
   color: #38b000;
@@ -2532,10 +2638,8 @@ footer {
   .products-page .person {
     margin: 1.875rem 0
   }
-  .products-page .projects__block_show {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 0.625rem
+  .products-page .projects__item {
+    width: calc(50% - 1.25rem)
   }
   .products-page .global-popup .popup__sides {
     -webkit-box-orient: vertical;

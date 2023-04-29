@@ -11,11 +11,75 @@ document.querySelector('.header__burger').onclick = () => {
 	document.querySelector('.header').classList.toggle('header_active')
 }
 
+if(document.querySelector('.projects__tabs li')) {
+
+
+  document.querySelectorAll('.projects__item').forEach(item => {
+    new Swiper(item.querySelector(".item__photo-swiper"), {
+      spaceBetween: 0,
+      slidesPerView: 1,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      navigation: {
+        // nextEl: ".swiper-button-next",
+        // prevEl: ".swiper-button-prev",
+        nextEl: item.querySelector('.swiper-button-next'),
+        prevEl: item.querySelector('.swiper-button-prev'),
+      },
+    });
+  })
+
+
+  document.querySelectorAll('.termin').forEach(item => {
+    item.onclick = function () {
+      document.querySelector('.global-popup').classList.add('popup_active')
+    }
+  })
+
+  document.querySelectorAll('.projects__item').forEach(item => {
+    item.onclick = function (e) {
+      console.log(!e.target.closest('.swiper-button-next') && !e.target.closest('.swiper-button-prev'))
+      if(!item.closest('.popup') || item.closest('.termin')) {
+        if((!e.target.closest('.swiper-button-next') && !e.target.closest('.swiper-button-prev'))) {
+          this.querySelector('.popup').classList.add('popup_active')
+        }
+      }
+    }
+  })
+  document.querySelectorAll('.popup__close, .popup__bgd').forEach(item => {
+    item.onclick = function () {
+      setTimeout(() => {
+        this.closest('.popup').classList.remove('popup_active')
+      }, 10)
+    }
+  })
+
+  document.querySelectorAll('.projects__tabs li').forEach((item, index) => {
+    item.onclick = function (e, ind) {
+      this.closest('ul').querySelector('.li_active').classList.remove('li_active')
+      this.closest('li').classList.add('li_active')
+
+      document.querySelector('.projects__block_active').classList.remove('projects__block_active')
+      document.querySelector('.projects__block_show').classList.remove('projects__block_show')
+
+      document.querySelectorAll('.projects__block')[index].classList.add('projects__block_active')
+      setTimeout(() => {
+        document.querySelectorAll('.projects__block')[index].classList.add('projects__block_show')
+      }, 10)
+    }
+  })
+}
+
+if(location.href.includes('index.html?')) {
+  location.href = location.href.replace("?", "#")
+}
+
 document.querySelectorAll('.header__menu a').forEach(item => item.onclick = function() {
 	if(document.querySelector('.header__menu li.li_active')) document.querySelector('.header__menu li.li_active').classList.remove('li_active')
-	if(document.querySelector('.header_active')) document.querySelector('.header_active').classList.remove('header_active')
-	this.parentNode.classList.add('li_active')
-})
+   if(document.querySelector('.header_active')) document.querySelector('.header_active').classList.remove('header_active')
+     this.parentNode.classList.add('li_active')
+ })
 
 const anchors = document.querySelectorAll('a[href*="#"]')
 
@@ -37,13 +101,15 @@ var swiperWithNav = new Swiper(".text-and-slider__nav", {
   slidesPerView: 3,
   freeMode: true,
   watchSlidesProgress: true,
-   breakpoints: {
+  breakpoints: {
     // when window width is >= 320px
     768: {
       slidesPerView: 5,
     },
   }
 });
+
+
 new Swiper(".text-and-slider__slider", {
   spaceBetween: 10,
   navigation: {
@@ -71,40 +137,4 @@ new Swiper(".slider-main", {
   },
 });
 
-document.querySelectorAll('.projects__item').forEach(item => {
-  item.onclick = function () {
-    if(!item.closest('.popup') || item.closest('.termin')) {
-      this.querySelector('.popup').classList.add('popup_active')
-    }
-  }
-})
-document.querySelectorAll('.popup__close, .popup__bgd').forEach(item => {
-  item.onclick = function () {
-    setTimeout(() => {
-      this.closest('.popup').classList.remove('popup_active')
-    }, 10)
-  }
-})
-
-document.querySelectorAll('.projects__tabs li').forEach((item, index) => {
-  item.onclick = function (e, ind) {
-    this.closest('ul').querySelector('.li_active').classList.remove('li_active')
-    this.closest('li').classList.add('li_active')
-
-    document.querySelector('.projects__block_active').classList.remove('projects__block_active')
-    document.querySelector('.projects__block_show').classList.remove('projects__block_show')
-
-    document.querySelectorAll('.projects__block')[index].classList.add('projects__block_active')
-    setTimeout(() => {
-      document.querySelectorAll('.projects__block')[index].classList.add('projects__block_show')
-    }, 10)
-  }
-})
-
-
-document.querySelectorAll('.termin').forEach(item => {
-  item.onclick = function () {
-    document.querySelector('.global-popup').classList.add('popup_active')
-  }
-})
 

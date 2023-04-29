@@ -458,7 +458,7 @@ header{
       height: 100%;
       object-fit: cover;
       display: block;
-      filter: brightness(.3);
+      filter: brightness(1.0);
       transition: all .3s ease;
     }
     li{
@@ -494,7 +494,7 @@ header{
     color: #000000;
   }
   &__button{
-    background: #38B000;
+    background: #1086D4;
     border-radius: 7px;
     font-weight: 600;
     font-size: 16px;
@@ -652,9 +652,10 @@ header{
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
-  iframe{
+  .map{
     width: 100%;
     height: 750px;
+    object-fit: cover;
   }
   &__form{
     position: absolute;
@@ -903,7 +904,7 @@ footer{
         font-size: 12px;
         line-height: 120%;
         letter-spacing: 0.035em;
-        color: #2B700A;
+        color: #595b5f;
         padding: 7px 0;
         display: block;
         width: 100%;
@@ -1181,6 +1182,47 @@ footer{
       flex-direction: column;
       margin-top: 0;
     }
+  }
+}
+
+
+.info-page{
+  margin: 100px 0;
+  .wrapper{
+    max-width: 1120px;
+  }
+  h1{
+    font-family: "Josefin Sans",Sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #003577;
+    margin-bottom: 60px;
+  }
+  h2{
+    color: #003577;
+    font-family: "Josefin Sans";
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  &__sides{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  li{
+    margin-bottom: 30px;
+    p{
+      color: #54595f;
+      font-size: 20px;
+      font-family: "Josefin Sans";
+      font-weight: 300;
+      line-height: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .info-page__sides{
+    display: block;
   }
 }
 

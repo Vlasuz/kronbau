@@ -1,0 +1,57 @@
+extends includes/head.pug
+block body
+
+	body
+		include includes/header-other.pug
+
+		main.products-page
+			section.info-page
+				.wrapper
+					h1 Impressum
+
+					.info-page__sides
+						.lft
+							ul
+								li
+									h2 Angaben gemäß § 5 TMG:
+									p KRONBAU GmbH
+									p Neustraße 1
+									p 40789 Monheim am Rhein
+
+								li
+									h2 Vertreten durch:
+									p Aleksandr Reich, Geschäftsführer
+								li
+									h2 Kontakt:
+									p Tel: +49 (0) 157-585296-79
+									p E-Mail: info@kronnbau.de
+						.rht
+							ul
+								li
+									h2 Handelsregister:
+									p Düsseldorf
+									p HRB 90343
+								li
+									h2 Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
+									p Aleksandr Reich
+									p Neustraße 1
+									p 40789 Monheim am Rhein
+
+
+			section.instagram
+				.wrapper
+					.instagram__title
+						.ico
+							img(src="img/inst-icon.png" alt="")
+						h2 FOLGEN SIE UNS AUF <b>INSTAGRAM</b>
+					.instagram__sides
+						.instagram__lft
+							img(src="img/hand-insta.png.webp" alt="")
+						.instagram__rht
+							p Bleiben Sie auf dem neuesten Stand und verpassen Sie keine Neuigkeiten über aktuell laufende Projekte.
+							p Erfahren Sie mehr von uns auf Instagram.
+							a(href="#") INSTAGRAM
+		
+
+		include includes/footer.pug
+		include includes/scripts.pug
