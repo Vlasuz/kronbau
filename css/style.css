@@ -1804,7 +1804,7 @@ footer {
   object-fit: cover
 }
 .products-page .projects .swiper-slide {
-  height: auto
+  height: 8.125rem
 }
 .products-page .projects .swiper-button-next:after,
 .products-page .projects .swiper-button-prev:after {
@@ -1861,7 +1861,7 @@ footer {
 }
 .products-page .projects__tabs button {
   border-bottom: 0.0625rem solid #e3e3e3;
-  color: #38b000;
+  color: #1086d4;
   font-family: Muli,Sans-serif;
   font-size: 1.0625rem;
   font-weight: 600;
@@ -1874,7 +1874,7 @@ footer {
   background: #e3e3e3
 }
 .products-page .projects__tabs .li_active button {
-  background: #38b000;
+  background: #1086d4;
   color: #fff
 }
 .products-page .projects__tabs .li_active button:after {
@@ -1893,13 +1893,13 @@ footer {
   border-bottom: 0
 }
 .products-page .projects .termin {
-  background-color: #e62154;
+  background-color: #38b000;
   border-radius: 2.125rem;
   padding: 0.75rem 1.5rem;
   color: #fff;
   width: 100%;
   font-weight: 700;
-  margin-top: 1.25rem
+  margin-top: 0.625rem
 }
 .products-page .projects__block {
   display: none;
@@ -1907,6 +1907,22 @@ footer {
   -webkit-transition: all .9s ease;
   -o-transition: all .9s ease;
   transition: all .9s ease
+}
+.products-page .projects__block:nth-child(1) .projects__item {
+  margin-left: 3.75rem
+}
+.products-page .projects__block:nth-child(2) {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+.products-page .projects__block:nth-child(3) {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end
+}
+.products-page .projects__block:nth-child(3) .projects__item {
+  margin-right: 3.75rem
 }
 .products-page .projects__block_active {
   display: -webkit-box;
@@ -2634,6 +2650,15 @@ footer {
 @media screen and (max-width:48em){
   * {
     font-size: 70%
+  }
+  .products-page .projects__tabs .li_active button:after {
+    bottom: -7px
+  }
+  .products-page .projects__block:nth-child(1) .projects__item {
+    margin-left: 0.9375rem
+  }
+  .products-page .projects__block:nth-child(3) .projects__item {
+    margin-right: 0.9375rem
   }
   .products-page .person {
     margin: 1.875rem 0

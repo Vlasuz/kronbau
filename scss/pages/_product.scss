@@ -274,7 +274,7 @@
 			object-fit: cover;
 		}
 		.swiper-slide, .swiper-slide{
-			height: auto;
+			height: 130px;
 		}
 		.swiper-button-next:after, .swiper-button-prev:after{
 			color: #38b000;
@@ -325,7 +325,7 @@
 			}
 			button{
 				border-bottom: 1px solid #e3e3e3;
-				color: #38b000;
+				color: #1086d4;
 				font-family: "Muli",Sans-serif;
 				font-size: 17px;
 				font-weight: 600;
@@ -340,7 +340,7 @@
 
 			.li_active{
 				button{
-					background: #38b000;
+					background: #1086d4;
 					color: #fff;
 					&:after{
 						content: "";
@@ -362,19 +362,34 @@
 		}
 
 		.termin{
-			background-color: #e62154;
+			background-color: #38b000;
 			border-radius: 34px;
 			padding: 12px 24px;
 			color: #fff;
 			width: 100%;
 			font-weight: bold;
-			margin-top: 20px;
+			margin-top: 10px;
 		}
 
 		&__block{
 			display: none;
 			opacity: 0;
 			transition: all .9s ease;
+			&:nth-child(1) {
+				.projects__item{
+					margin-left: 60px;
+				}
+			}
+			&:nth-child(2) {
+				justify-content: center;
+				
+			}
+			&:nth-child(3) {
+				justify-content: flex-end;
+				.projects__item{
+					margin-right: 60px;
+				}
+			}
 			&_active{
 				// display: grid;
 				// grid-template-columns: repeat(4, 1fr);
@@ -382,6 +397,7 @@
 				display: flex;
 				margin: 0 -10px;
 				flex-wrap: wrap;
+				// justify-content: center;
 			}
 			&_show{
 				opacity: 1;
@@ -1020,6 +1036,16 @@
 @media screen and (max-width: 768px) {
 	*{
 		font-size: 70%;
+	}
+
+	.products-page .projects__tabs .li_active button:after{
+		bottom: -7px;
+	}
+	.products-page .projects__block:nth-child(1) .projects__item{
+		margin-left: 15px;
+	}
+	.products-page .projects__block:nth-child(3) .projects__item{
+		margin-right: 15px;
 	}
 	.products-page .person{
 		margin: 30px 0;
