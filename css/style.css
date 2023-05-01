@@ -417,6 +417,7 @@ header {
   line-height: 4.5625rem;
   color: #fff
 }
+.banner__text a,
 .banner__text button {
   font-weight: 600;
   font-size: 1rem;
