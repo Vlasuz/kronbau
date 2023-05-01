@@ -1792,8 +1792,11 @@ footer {
 }
 .products-page .projects .swiper-slide img {
   height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover
+  -o-object-fit: contain;
+  object-fit: contain
+}
+.products-page .projects .swiper-slide {
+  height: 12.5rem
 }
 .products-page .projects .swiper-button-next:after,
 .products-page .projects .swiper-button-prev:after {
@@ -2247,7 +2250,8 @@ footer {
   background: #f0f0f0;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-  border-radius: 1.25rem
+  border-radius: 1.25rem;
+  max-width: 56.25rem
 }
 .products-page .form form {
   display: -webkit-box;

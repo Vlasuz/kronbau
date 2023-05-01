@@ -276,11 +276,11 @@
 		}
 		.swiper-slide img, .swiper-slide img{
 			height: 100%;
-			object-fit: cover;
+			object-fit: contain;
 		}
-		// .swiper-slide, .swiper-slide{
-		// 	height: 130px;
-		// }
+		.swiper-slide, .swiper-slide{
+			height: 200px;
+		}
 		.swiper-button-next:after, .swiper-button-prev:after{
 			color: #38b000;
 			font-size: 15px;
@@ -715,6 +715,7 @@
 			padding-top: 20px;
 			padding-bottom: 20px;
 			border-radius: 20px;
+			max-width: 900px;
 		}
 		form{
 			display: flex;
