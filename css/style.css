@@ -1520,8 +1520,10 @@ footer {
   margin-bottom: 1.25rem
 }
 .products-page .banner {
-  background: url(../img/banner-photo-2.png) no-repeat;
+  background-image: url(../img/banner-photo-2.png);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 45rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1649,7 +1651,7 @@ footer {
 .products-page .person__lft .lft__block {
   background: #1086d4;
   padding: 0.9375rem;
-  border-radius: 1.25rem;
+  border-radius: 0 0 1.25rem 1.25rem;
   position: relative;
   margin-top: -150px
 }
@@ -1933,7 +1935,8 @@ footer {
   font-family: Muli,Sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
-  margin-bottom: 0.3125rem
+  margin-bottom: 0.3125rem;
+  text-align: center
 }
 .products-page .projects__item p {
   color: #000;
@@ -2352,7 +2355,8 @@ footer {
   letter-spacing: .1em;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
-  transition: all .3s ease
+  transition: all .3s ease;
+  border-radius: 0.9375rem
 }
 .products-page .form .bottom button:hover {
   background: #015bb6
