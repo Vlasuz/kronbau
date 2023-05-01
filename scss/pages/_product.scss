@@ -16,7 +16,7 @@
 		}
 		h2{
 			color: #1086d4;
-			font-family: "Josefin Sans",Sans-serif;
+			// font-family: "Josefin Sans",Sans-serif;
 			font-size: 32px;
 			font-weight: 700;
 			letter-spacing: 4.4px;
@@ -48,13 +48,14 @@
 			height: 117px;
 			border-radius: 15px;
 			h3{
-				font-family: "Josefin Sans",Sans-serif;
+				// font-family: "Josefin Sans",Sans-serif;
+				    font-family: "Adobe Gurmukhi";
 				font-size: 20px;
 				font-weight: 600;
 				margin-bottom: 7px;
 			}
 			p{
-				font-family: "Josefin Sans",Sans-serif;
+				// font-family: "Josefin Sans",Sans-serif;
 				font-size: 18px;
 				font-weight: 200;
 			}
@@ -64,7 +65,8 @@
 			width: fit-content;
 			h2{
 				color: #fff;
-				font-family: "Josefin Sans",Sans-serif;
+				// font-family: "Josefin Sans",Sans-serif;
+				    font-family: "Adobe Gurmukhi";
 				font-size: 28px;
 				font-weight: 600;
 				margin-bottom: 10px;
@@ -73,7 +75,7 @@
 				font-size: 20px;
 				color: #fff;
 				font-weight: 200;
-				font-family: "Josefin Sans",Sans-serif;
+				// font-family: "Josefin Sans",Sans-serif;
 				line-height: 30px;
 			}
 			&:first-child{
@@ -110,7 +112,7 @@
 			margin-left: 20px;
 			h2{
 				color: #1086d4;
-				font-family: "Josefin Sans",Sans-serif;
+				// font-family: "Josefin Sans",Sans-serif;
 				font-size: 32px;
 				font-weight: 700;
 				letter-spacing: 4.4px;
@@ -121,7 +123,7 @@
 				font-family: "Adobe Gurmukhi",Sans-serif;
 				font-size: 58px;
 				font-weight: 200;
-				font-style: italic;
+				// font-style: italic;
 				margin-bottom: 20px;
 			}
 			p{
@@ -139,6 +141,8 @@
 				background: #1086d4;
 				padding: 15px;
 				border-radius: 20px;
+				position: relative;
+				margin-top: -150px;
 			}
 			h3{
 				color: #fff;
@@ -152,7 +156,7 @@
 			span,
 			b{
 				color: #fff;
-				font-family: "Josefin Sans",Sans-serif;
+				// font-family: "Josefin Sans",Sans-serif;
 				font-size: 18px;
 				font-weight: 500;
 				display: block;
@@ -163,7 +167,7 @@
 			}
 			a{
 				color: #fff;
-				font-family: "Josefin Sans",Sans-serif;
+				// font-family: "Josefin Sans",Sans-serif;
 				font-size: 18px;
 				font-weight: 500;
 				display: block;
@@ -173,6 +177,7 @@
 			img{
 				width: 100%;
 				display: block;
+				border-radius: 20px;
 			}
 		}
 	}
@@ -235,7 +240,7 @@
 		}
 		h2{
 			color: #1086d4;
-			font-family: "Josefin Sans",Sans-serif;
+			// font-family: "Josefin Sans",Sans-serif;
 			font-size: 32px;
 			font-weight: 700;
 			letter-spacing: 4.4px;
@@ -246,7 +251,7 @@
 			font-family: "Adobe Gurmukhi",Sans-serif;
 			font-size: 58px;
 			font-weight: 200;
-			font-style: italic;
+			// font-style: italic;
 			margin-bottom: 20px;
 		}
 		p{
@@ -273,9 +278,9 @@
 			height: 100%;
 			object-fit: cover;
 		}
-		.swiper-slide, .swiper-slide{
-			height: 130px;
-		}
+		// .swiper-slide, .swiper-slide{
+		// 	height: 130px;
+		// }
 		.swiper-button-next:after, .swiper-button-prev:after{
 			color: #38b000;
 			font-size: 15px;
@@ -299,7 +304,7 @@
 		}
 		h2{
 			color: #1086d4;
-			font-family: "Josefin Sans",Sans-serif;
+			// font-family: "Josefin Sans",Sans-serif;
 			font-size: 32px;
 			font-weight: 700;
 			letter-spacing: 4.4px;
@@ -310,7 +315,7 @@
 			font-family: "Adobe Gurmukhi",Sans-serif;
 			font-size: 58px;
 			font-weight: 200;
-			font-style: italic;
+			// font-style: italic;
 			margin-bottom: 20px;
 		}
 		&__tabs{
@@ -377,7 +382,7 @@
 			transition: all .9s ease;
 			&:nth-child(1) {
 				.projects__item{
-					margin-left: 60px;
+					// margin-left: 60px;
 				}
 			}
 			&:nth-child(2) {
@@ -387,7 +392,7 @@
 			&:nth-child(3) {
 				justify-content: flex-end;
 				.projects__item{
-					margin-right: 60px;
+					// margin-right: 60px;
 				}
 			}
 			&_active{
@@ -395,7 +400,7 @@
 				// grid-template-columns: repeat(4, 1fr);
 				// grid-gap: 20px;
 				display: flex;
-				margin: 0 -10px;
+				// margin: 0 -10px;
 				flex-wrap: wrap;
 				// justify-content: center;
 			}
@@ -407,8 +412,8 @@
 			box-shadow: 0px 0px 15px 0px rgba(0,0,0,.2);
 			padding: 20px;
 			background: #fff;
-			width: calc(100% / 4 - 20px);
-			margin: 0 10px;
+			width: calc(100% / 3);
+			// margin: 0 10px;
 			margin-bottom: 10px;
 			// max-width: 300px;
 			cursor: pointer;
@@ -575,7 +580,7 @@
 		z-index: 2;
 		h2{
 			color: #38b000;
-			font-family: "Josefin Sans",Sans-serif;
+			// font-family: "Josefin Sans",Sans-serif;
 			font-size: 32px;
 			font-weight: 700;
 			letter-spacing: 4.4px;
@@ -588,6 +593,7 @@
 		}
 		img{
 			object-fit: cover;
+			object-position: center ;
 		}
 		iframe{
 			height: 436px;
@@ -615,7 +621,7 @@
 		h4{
 			text-align: center;
 			color: #fff;
-			font-family: "Josefin Sans",Sans-serif;
+			// font-family: "Josefin Sans",Sans-serif;
 			font-size: 32px;
 			font-weight: 600;
 			margin-bottom: 50px;
@@ -635,7 +641,7 @@
 			p,
 			b{
 				color: #fff;
-				font-family: "Josefin Sans",Sans-serif;
+				// font-family: "Josefin Sans",Sans-serif;
 				font-size: 20px;
 				margin-bottom: 50px;
 				margin-bottom: 20px;
@@ -652,7 +658,7 @@
 			margin-right: 30px;
 			h2{
 				color: #fff;
-				font-family: "Josefin Sans",Sans-serif;
+				// font-family: "Josefin Sans",Sans-serif;
 				font-size: 60px;
 				font-weight: 700;
 				letter-spacing: 4.4px;
@@ -663,7 +669,7 @@
 				font-family: "Cardo",Sans-serif;
 				font-size: 43px;
 				font-weight: 200;
-				font-style: italic;
+				// font-style: italic;
 				text-shadow: 0px 15px 10px rgba(0,0,0,.3);
 			}
 		}
@@ -697,18 +703,22 @@
 
 	.form{
 		padding: 80px 0;
-		background: #f0f0f0;
 		margin-top: 50px;
 		h2{
 			color: #38b000;
-			font-family: "Josefin Sans", sans-serif;
+			// font-family: "Josefin Sans", sans-serif;
 			font-size: 28px;
 			margin-bottom: 20px;
+		}
+		.wrapper {
+			background: #f0f0f0;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			border-radius: 20px;
 		}
 		form{
 			display: flex;
 			flex-wrap: wrap;
-			margin: 0 -10px;
 		}
 		input{
 			border: none;
@@ -815,13 +825,13 @@
 			p{
 				font-size: 20px;
 				color: #000;
-				font-family: "Josefin Sans", sans-serif;
+				// font-family: "Josefin Sans", sans-serif;
 				margin: 50px 0;
 				font-weight: 300;
 				line-height: 30px;
 			}
 			a{
-				font-family: "Josefin Sans",Sans-serif;
+				// font-family: "Josefin Sans",Sans-serif;
 				font-size: 17px;
 				font-weight: 400;
 				background: transparent;
@@ -830,7 +840,7 @@
 				display: block;
 				color: #000;
 				border-radius: 5px;
-				font-family: "Josefin Sans",Sans-serif;
+				// font-family: "Josefin Sans",Sans-serif;
 				font-size: 17px;
 				font-weight: 400;
 				width: fit-content;
@@ -856,7 +866,7 @@
 				width: 100%;
 			}
 			h2{
-				font-family: "Josefin Sans",Sans-serif;
+				// font-family: "Josefin Sans",Sans-serif;
 				font-size: 28px;
 				font-weight: 300;
 				border-bottom: 2px solid #000;
@@ -889,10 +899,10 @@
 		}
 		h3{
 			color: #3d4e60;
-			font-family: "Josefin Sans",Sans-serif;
+			// font-family: "Josefin Sans",Sans-serif;
 			font-size: 29px;
 			font-weight: 300;
-			margin-bottom: 20px;
+			margin-bottom: 10px;
 			position: relative;
 			&:before{
 				content: '';
@@ -907,16 +917,17 @@
 		}
 		h2{
 			color: #000;
-			font-family: "Josefin Sans",Sans-serif;
+			// font-family: "Josefin Sans",Sans-serif;
 			font-size: 47px;
+			font-family: "Adobe Gurmukhi";
 			font-weight: 700;
 			line-height: 1.2em;
-			margin-bottom: 20px;
+			margin-bottom: 10px;
 		}
 		p{
 			text-align: left;
 			color: #3d4e60;
-			font-family: "Josefin Sans",Sans-serif;
+			// font-family: "Josefin Sans",Sans-serif;
 			font-size: 19px;
 			font-weight: 200;
 			line-height: 1.5em;
@@ -1042,10 +1053,10 @@
 		bottom: -7px;
 	}
 	.products-page .projects__block:nth-child(1) .projects__item{
-		margin-left: 15px;
+		// margin-left: 15px;
 	}
 	.products-page .projects__block:nth-child(3) .projects__item{
-		margin-right: 15px;
+		// margin-right: 15px;
 	}
 	.products-page .person{
 		margin: 30px 0;
@@ -1055,7 +1066,7 @@
 		// grid-gap: 10px;
 	}
 	.products-page .projects__item{
-		width: calc(50% - 20px);
+		width: calc(100% / 3);
 	}
 	.products-page .global-popup .popup__sides{
 		flex-direction: column;

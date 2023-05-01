@@ -104,7 +104,7 @@ var swiperWithNav = new Swiper(".text-and-slider__nav", {
   breakpoints: {
     // when window width is >= 320px
     768: {
-      slidesPerView: 5,
+      slidesPerView: 4,
     },
   }
 });

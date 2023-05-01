@@ -5,19 +5,6 @@
   padding: 0;
   box-sizing: border-box;
 
-  // Проверка, горизонтальный скролл страницы
-
-  // border: 1px solid red;
-  // &:after,
-  // &:before{
-  //  border: 1px solid red;
-  // }
-
-  // Проверка, горизонтальный скролл страницы
-
-  // font-family: 'Lato', sans-serif;
-  // font-family: 'Montserrat', sans-serif;
-  // font-family: 'Open Sans', sans-serif;
   font-family: 'Assistant';
 }
 
@@ -1192,7 +1179,7 @@ footer{
     max-width: 1120px;
   }
   h1{
-    font-family: "Josefin Sans",Sans-serif;
+    font-family: "Adobe Gurmukhi";
     font-size: 42px;
     font-weight: 600;
     color: #003577;
@@ -1200,7 +1187,7 @@ footer{
   }
   h2{
     color: #003577;
-    font-family: "Josefin Sans";
+    font-family: "Adobe Gurmukhi";
     font-size: 24px;
     margin-bottom: 20px;
   }
@@ -1213,7 +1200,7 @@ footer{
     p{
       color: #54595f;
       font-size: 20px;
-      font-family: "Josefin Sans";
+      // font-family: "Josefin Sans";
       font-weight: 300;
       line-height: 30px;
     }

@@ -65,7 +65,6 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
   margin: 0
@@ -1465,7 +1464,7 @@ footer {
   max-width: 70rem
 }
 .info-page h1 {
-  font-family: "Josefin Sans",Sans-serif;
+  font-family: "Adobe Gurmukhi";
   font-size: 2.625rem;
   font-weight: 600;
   color: #003577;
@@ -1473,7 +1472,7 @@ footer {
 }
 .info-page h2 {
   color: #003577;
-  font-family: "Josefin Sans";
+  font-family: "Adobe Gurmukhi";
   font-size: 1.5rem;
   margin-bottom: 1.25rem
 }
@@ -1489,7 +1488,6 @@ footer {
 .info-page li p {
   color: #54595f;
   font-size: 1.25rem;
-  font-family: "Josefin Sans";
   font-weight: 300;
   line-height: 1.875rem
 }
@@ -1515,7 +1513,6 @@ footer {
 }
 .products-page .progress h2 {
   color: #1086d4;
-  font-family: "Josefin Sans",Sans-serif;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 4.4px;
@@ -1559,13 +1556,12 @@ footer {
   border-radius: 0.9375rem
 }
 .products-page .banner__item h3 {
-  font-family: "Josefin Sans",Sans-serif;
+  font-family: "Adobe Gurmukhi";
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.4375rem
 }
 .products-page .banner__item p {
-  font-family: "Josefin Sans",Sans-serif;
   font-size: 1.125rem;
   font-weight: 200
 }
@@ -1577,7 +1573,7 @@ footer {
 }
 .products-page .banner__block h2 {
   color: #fff;
-  font-family: "Josefin Sans",Sans-serif;
+  font-family: "Adobe Gurmukhi";
   font-size: 1.75rem;
   font-weight: 600;
   margin-bottom: 0.625rem
@@ -1586,7 +1582,6 @@ footer {
   font-size: 1.25rem;
   color: #fff;
   font-weight: 200;
-  font-family: "Josefin Sans",Sans-serif;
   line-height: 1.875rem
 }
 .products-page .banner__block:first-child {
@@ -1628,7 +1623,6 @@ footer {
 }
 .products-page .person__rht h2 {
   color: #1086d4;
-  font-family: "Josefin Sans",Sans-serif;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 4.4px;
@@ -1639,7 +1633,6 @@ footer {
   font-family: "Adobe Gurmukhi",Sans-serif;
   font-size: 3.625rem;
   font-weight: 200;
-  font-style: italic;
   margin-bottom: 1.25rem
 }
 .products-page .person__rht p {
@@ -1655,7 +1648,9 @@ footer {
 .products-page .person__lft .lft__block {
   background: #1086d4;
   padding: 0.9375rem;
-  border-radius: 1.25rem
+  border-radius: 1.25rem;
+  position: relative;
+  margin-top: -150px
 }
 .products-page .person__lft h3 {
   color: #fff;
@@ -1669,7 +1664,6 @@ footer {
 .products-page .person__lft b,
 .products-page .person__lft span {
   color: #fff;
-  font-family: "Josefin Sans",Sans-serif;
   font-size: 1.125rem;
   font-weight: 500;
   display: block;
@@ -1680,7 +1674,6 @@ footer {
 }
 .products-page .person__lft a {
   color: #fff;
-  font-family: "Josefin Sans",Sans-serif;
   font-size: 1.125rem;
   font-weight: 500;
   display: block;
@@ -1689,7 +1682,8 @@ footer {
 }
 .products-page .person__lft img {
   width: 100%;
-  display: block
+  display: block;
+  border-radius: 1.25rem
 }
 .products-page .text-and-slider {
   margin-bottom: 6.25rem
@@ -1766,7 +1760,6 @@ footer {
 }
 .products-page .text-and-slider h2 {
   color: #1086d4;
-  font-family: "Josefin Sans",Sans-serif;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 4.4px;
@@ -1777,7 +1770,6 @@ footer {
   font-family: "Adobe Gurmukhi",Sans-serif;
   font-size: 3.625rem;
   font-weight: 200;
-  font-style: italic;
   margin-bottom: 1.25rem
 }
 .products-page .text-and-slider p {
@@ -1803,9 +1795,6 @@ footer {
   -o-object-fit: cover;
   object-fit: cover
 }
-.products-page .projects .swiper-slide {
-  height: 8.125rem
-}
 .products-page .projects .swiper-button-next:after,
 .products-page .projects .swiper-button-prev:after {
   color: #38b000;
@@ -1830,7 +1819,6 @@ footer {
 }
 .products-page .projects h2 {
   color: #1086d4;
-  font-family: "Josefin Sans",Sans-serif;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 4.4px;
@@ -1841,7 +1829,6 @@ footer {
   font-family: "Adobe Gurmukhi",Sans-serif;
   font-size: 3.625rem;
   font-weight: 200;
-  font-style: italic;
   margin-bottom: 1.25rem
 }
 .products-page .projects__tabs {
@@ -1908,9 +1895,6 @@ footer {
   -o-transition: all .9s ease;
   transition: all .9s ease
 }
-.products-page .projects__block:nth-child(1) .projects__item {
-  margin-left: 3.75rem
-}
 .products-page .projects__block:nth-child(2) {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -1921,14 +1905,10 @@ footer {
   -ms-flex-pack: end;
   justify-content: flex-end
 }
-.products-page .projects__block:nth-child(3) .projects__item {
-  margin-right: 3.75rem
-}
 .products-page .projects__block_active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 -10px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap
 }
@@ -1940,8 +1920,7 @@ footer {
   box-shadow: 0 0 0.9375rem 0 rgba(0,0,0,.2);
   padding: 1.25rem;
   background: #fff;
-  width: calc(25% - 1.25rem);
-  margin: 0 0.625rem;
+  width: 33.3333333333%;
   margin-bottom: 0.625rem;
   cursor: pointer
 }
@@ -2129,7 +2108,6 @@ footer {
 }
 .products-page .map h2 {
   color: #38b000;
-  font-family: "Josefin Sans",Sans-serif;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 4.4px;
@@ -2143,7 +2121,9 @@ footer {
 }
 .products-page .map img {
   -o-object-fit: cover;
-  object-fit: cover
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center
 }
 .products-page .map iframe {
   height: 27.25rem;
@@ -2176,7 +2156,6 @@ footer {
 .products-page .info-and-video h4 {
   text-align: center;
   color: #fff;
-  font-family: "Josefin Sans",Sans-serif;
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 3.125rem;
@@ -2197,7 +2176,6 @@ footer {
 .products-page .info-and-video__texts b,
 .products-page .info-and-video__texts p {
   color: #fff;
-  font-family: "Josefin Sans",Sans-serif;
   font-size: 1.25rem;
   margin-bottom: 3.125rem;
   margin-bottom: 1.25rem;
@@ -2214,7 +2192,6 @@ footer {
 }
 .products-page .info-and-video__title h2 {
   color: #fff;
-  font-family: "Josefin Sans",Sans-serif;
   font-size: 3.75rem;
   font-weight: 700;
   letter-spacing: 4.4px;
@@ -2225,7 +2202,6 @@ footer {
   font-family: Cardo,Sans-serif;
   font-size: 2.6875rem;
   font-weight: 200;
-  font-style: italic;
   text-shadow: 0 0.9375rem 0.625rem rgba(0,0,0,.3)
 }
 .products-page .info-and-video__image {
@@ -2260,22 +2236,25 @@ footer {
 }
 .products-page .form {
   padding: 5rem 0;
-  background: #f0f0f0;
   margin-top: 3.125rem
 }
 .products-page .form h2 {
   color: #38b000;
-  font-family: "Josefin Sans",sans-serif;
   font-size: 1.75rem;
   margin-bottom: 1.25rem
+}
+.products-page .form .wrapper {
+  background: #f0f0f0;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-radius: 1.25rem
 }
 .products-page .form form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 0 -10px
+  flex-wrap: wrap
 }
 .products-page .form input {
   border: none;
@@ -2402,13 +2381,11 @@ footer {
 .products-page .instagram__rht p {
   font-size: 1.25rem;
   color: #000;
-  font-family: "Josefin Sans",sans-serif;
   margin: 3.125rem 0;
   font-weight: 300;
   line-height: 1.875rem
 }
 .products-page .instagram__rht a {
-  font-family: "Josefin Sans",Sans-serif;
   font-size: 1.0625rem;
   font-weight: 400;
   background: 0 0;
@@ -2417,7 +2394,6 @@ footer {
   display: block;
   color: #000;
   border-radius: 0.3125rem;
-  font-family: "Josefin Sans",Sans-serif;
   font-size: 1.0625rem;
   font-weight: 400;
   width: -webkit-fit-content;
@@ -2453,7 +2429,6 @@ footer {
   width: 100%
 }
 .products-page .instagram__title h2 {
-  font-family: "Josefin Sans",Sans-serif;
   font-size: 1.75rem;
   font-weight: 300;
   border-bottom: 0.125rem solid #000;
@@ -2490,10 +2465,9 @@ footer {
 }
 .products-page .global-popup h3 {
   color: #3d4e60;
-  font-family: "Josefin Sans",Sans-serif;
   font-size: 1.8125rem;
   font-weight: 300;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.625rem;
   position: relative
 }
 .products-page .global-popup h3:before {
@@ -2510,16 +2484,15 @@ footer {
 }
 .products-page .global-popup h2 {
   color: #000;
-  font-family: "Josefin Sans",Sans-serif;
   font-size: 2.9375rem;
+  font-family: "Adobe Gurmukhi";
   font-weight: 700;
   line-height: 1.2em;
-  margin-bottom: 1.25rem
+  margin-bottom: 0.625rem
 }
 .products-page .global-popup p {
   text-align: left;
   color: #3d4e60;
-  font-family: "Josefin Sans",Sans-serif;
   font-size: 1.1875rem;
   font-weight: 200;
   line-height: 1.5em
@@ -2654,17 +2627,11 @@ footer {
   .products-page .projects__tabs .li_active button:after {
     bottom: -7px
   }
-  .products-page .projects__block:nth-child(1) .projects__item {
-    margin-left: 0.9375rem
-  }
-  .products-page .projects__block:nth-child(3) .projects__item {
-    margin-right: 0.9375rem
-  }
   .products-page .person {
     margin: 1.875rem 0
   }
   .products-page .projects__item {
-    width: calc(50% - 1.25rem)
+    width: 33.3333333333%
   }
   .products-page .global-popup .popup__sides {
     -webkit-box-orient: vertical;
